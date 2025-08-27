@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Undangan Pernikahan – Jaka & Tata</title>
+  <meta name="description" content="Undangan pernikahan Jaka & Tata – mohon doa & kehadirannya" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --brand: #4b2e2e;
+      --brand-2: #C49E85;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    .glass { backdrop-filter: blur(8px); background: rgba(255,255,255,.7); }
+    .section { padding-top: 4rem; padding-bottom: 4rem; }
+    .fade-up { opacity: 0; transform: translateY(16px); transition: .6s ease; }
+    .fade-up.show { opacity: 1; transform: translateY(0); }
+  </style>
+  <div id="music-overlay" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+  <button onclick="startMusic()" class="bg-white px-6 py-3 rounded-2xl shadow transition-all hover:scale-105">
+    Klik untuk Memulai
+  </button>
+</div>
+
+<audio id="bg-music" loop>
+  <source src="Assets/Audio/Denny Caknan Sinarengan.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function startMusic() {
+    document.getElementById('bg-music').play();
+    document.getElementById('music-overlay').style.display = 'none';
+  }
+</script>
+
+  <header class="relative min-h-[88vh] flex items-center justify-center overflow-hidden">
+    <img src="Assets/Image/PS (30).JPG" alt="cover" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
+
+    <div class="relative z-10 container mx-auto px-6 text-center text-white">
+      <p class="uppercase tracking-[.35em] text-sm md:text-base">Undangan Pernikahan</p>
+      <h1 class="text-4xl md:text-6xl font-semibold mt-3">Jaka &amp; Tata</h1>
+      <p class="mt-4 text-lg md:text-xl">Kepada Yth. <span id="guestName" class="font-semibold">Bapak/Ibu/Saudara/i</span></p>
+      <p class="mt-1 text-sm opacity-90">Kami mengundang untuk hadir dan berbagi kebahagiaan</p>
+
+<div class="mt-8 flex flex-col md:flex-row items-center justify-center gap-3">
+  <a href="#acara" class="inline-block rounded-2xl bg-[var(--brand)] px-6 py-3 font-semibold shadow-lg hover:shadow-xl">
+    Lihat Detail Acara
+  </a>
+  <button id="shareBtn" aria-label="Bagikan Undangan" class="px-6 py-3 rounded-2xl bg-[var(--brand)] text-white font-semibold shadow-lg hover:shadow-xl">
+    Bagikan Undangan
+  </button>
+</div>
+
+      <div class="mt-10 grid place-items-center">
+        <div class="rounded-3xl glass border border-white/50 px-6 py-4">
+          <p class="text-sm">Menuju Hari Bahagia</p>
+          <div id="countdown" class="mt-1 text-2xl md:text-3xl font-semibold tracking-wide">00 Hari : 00 Jam : 00 Menit : 00 Detik</div>
+          <p class="text-sm mt-1" id="dateText">Sabtu, 20 September 2025</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section bg-[var(--brand-2)]">
+      <div class="container mx-auto px-6 max-w-3xl text-center fade-up">
+        <p class="text-sm">Bismillahirrahmanirrahim</p>
+        <h2 class="text-2xl md:text-3xl font-semibold mt-2">Assalamu'alaikum warahmatullahi wabarakatuh</h2>
+        <p class="mt-4 leading-relaxed text-black-700">Dengan memohon rahmat dan ridha Allah SWT, kami bermaksud menyelenggarakan akad dan resepsi pernikahan putra-putri kami:</p>
+      </div>
+    </section>
+
+    <section id="mempelai" class="section">
+      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+        <div class="fade-up text-center md:text-right">
+          <img class="w-60 h-60 object-cover rounded-full mx-auto md:ml-auto border-4 border-[var(--brand)]" src="Assets/Image/PS (57).JPG" alt="mempelai pria">
+          <h3 class="text-2xl font-semibold mt-4">Jaka Suara</h3>
+          <p class="text-sm text-black-600">Putra dari Bpk. Sutarya &amp; Ibu Wari</p>
+          <p class="text-sm text-black-600"></p>
+        </div>
+        <div class="fade-up text-center md:text-left">
+          <img class="w-60 h-60 object-cover rounded-full mx-auto md:mr-auto border-4 border-[var(--brand)]" src="Assets/Image/PS (53).JPG" alt="mempelai wanita">
+          <h3 class="text-2xl font-semibold mt-4">Nurkholisa (TATA)</h3>
+          <p class="text-sm text-black-600">Putri dari Bpk. Basuni &amp; Ibu Ima (Almh)</p>
+          <p class="text-sm text-black-600"> Keponakan dari Bpk. Toto (Ped. Bubur Ayam)/ Ibu Koniah (Oong)</p>
+          <p class="text-sm text-black-600"> Cucu dari Bpk. Sidik</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="acara" class="section bg-[var(--brand-2)]">
+      <div class="container mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto fade-up">
+          <h2 class="text-3xl font-semibold">Detail Acara</h2>
+          <p class="mt-2 text-black-600">Mohon kehadiran Bapak/Ibu/Saudara/i pada waktu dan tempat berikut:</p>
+        </div>
+
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+          <div class="fade-up rounded-3xl border border-gray-200 p-6 shadow-sm bg-white">
+            <h3 class="text-xl font-semibold">Akad Nikah</h3>
+            <ul class="mt-3 text-black-700 space-y-1">
+              <li><strong>Hari/Tanggal:</strong> Sabtu, 20 September 2025</li>
+              <li><strong>Waktu:</strong> 08.00 WIB</li>
+              <li><strong>Tempat:</strong> Kediaman Mempelai Wanita</li>
+              <li><strong>Alamat:</strong> Kel. Gegunung Blok Kali Cilik RT.01 RW.03 Kec. Sumber Kab. Cirebon</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-3">
+              <a target="_blank" href="https://maps.app.goo.gl/5siSsAWiPV9sJGpg8" class="px-4 py-2 rounded-xl bg-[var(--brand)] text-white font-semibold">Buka Maps</a>
+              <button class="px-4 py-2 rounded-xl border font-semibold" onclick="addToCalendar('Akad Nikah','20250920T010000Z','20250920T030000Z','Kel. Gegunung Blok Kali Cilik RT.01 RW.03 Kec. Sumber Kab. Cirebon')">Simpan ke Kalender</button>
+            </div>
+          </div>
+
+          <div class="fade-up rounded-3xl border border-gray-200 p-6 shadow-sm bg-white">
+            <h3 class="text-xl font-semibold">Resepsi</h3>
+            <ul class="mt-3 text-black-700 space-y-1">
+              <li><strong>Hari/Tanggal:</strong> Sabtu, 20 September 2025</li>
+              <li><strong>Waktu:</strong> 09.00 WIB – Selesai</li>
+              <li><strong>Tempat:</strong> Kediaman Mempelai wanita</li>
+              <li><strong>Alamat:</strong> Kel. Gegunung Blok Kali Cilik RT.01 RW.03 Kec. Sumber Kab. Cirebon</li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-3">
+              <a target="_blank" href="https://maps.app.goo.gl/5siSsAWiPV9sJGpg8" class="px-4 py-2 rounded-xl bg-[var(--brand)] text-white font-semibold">Buka Maps</a>
+              <button class="px-4 py-2 rounded-xl border font-semibold" onclick="addToCalendar('Resepsi','20250920T010000Z','20250920T030000Z','Kel. Gegunung Blok Kali Cilik RT.01 RW.03 Kec. Sumber Kab. Cirebon')">Simpan ke Kalender</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lokasi" class="section">
+      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-6 items-center">
+        <div class="fade-up">
+          <h2 class="text-2xl md:text-3xl font-semibold">Lokasi Acara</h2>
+          <p class="mt-2 text-black-600">Silakan gunakan peta di samping untuk navigasi menuju lokasi.</p>
+          <div class="mt-4 flex gap-3">
+            <button class="px-4 py-2 rounded-xl bg-[var(--brand)] text-white font-semibold" onclick="copyText('Kel. Gegunung Blok Kali Cilik RT.01 RW.03 Kec. Sumber Kab. Cirebon')">Salin Alamat</button>
+            <a target="_blank" href="https://maps.app.goo.gl/5siSsAWiPV9sJGpg8" class="px-4 py-2 rounded-xl border font-semibold">Buka di Google Maps</a>
+          </div>
+        </div>
+        <div class="fade-up rounded-2xl overflow-hidden shadow">
+          <iframe title="Peta Lokasi" src="https://www.google.com/maps/embed?pb=!4v1755837590284!6m8!1m7!1sj_ZUv0OsnPco9hWYBcwnvw!2m2!1d-6.745071086176215!2d108.4955926299876!3f46.55396669690315!4f-8.044735390048402!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="section bg-[var(--brand-2)]">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <div class="text-center fade-up">
+          <h2 class="text-3xl font-semibold">Konfirmasi Kehadiran</h2>
+          <p class="mt-2 text-black-600">Mohon bantu kami menyiapkan yang terbaik dengan mengisi formulir berikut:</p>
+        </div>
+
+        <form class="fade-up mt-6 grid gap-4 bg-white p-6 rounded-3xl border" action="https://formspree.io/f/mvgbobov" method="POST">
+          <div class="grid md:grid-cols-2 gap-4">
+            <input name="nama" required class="px-4 py-3 rounded-xl border" placeholder="Nama" />
+            <input name="telepon" class="px-4 py-3 rounded-xl border" placeholder="No. WhatsApp" />
+          </div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <select name="status" class="px-4 py-3 rounded-xl border">
+              <option value="Hadir">Hadir</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+            <input name="jumlah" type="number" min="1" class="px-4 py-3 rounded-xl border" placeholder="Jumlah Tamu" />
+          </div>
+          <textarea name="pesan" rows="3" class="px-4 py-3 rounded-xl border" placeholder="Ucapan/Pesan"></textarea>
+          <button class="px-6 py-3 rounded-2xl bg-[var(--brand)] text-white font-semibold">Kirim RSVP</button>
+          <p class="text-xs text-black-500">Atau via WhatsApp: <a target="_blank" class="underline" href="https://wa.me/6285559539342?text=Halo%20Jaka/Lisa,%20saya%20akan%20hadir">Klik di sini</a></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="galeri" class="section">
+      <div class="container mx-auto px-6">
+        <div class="text-center fade-up">
+          <h2 class="text-3xl font-semibold">Galeri</h2>
+          <p class="mt-2 text-black-600">Beberapa momen kebersamaan kami.</p>
+        </div>
+        <div class="mt-6 grid grid-cols-2 md:grid-cols-3 gap-3 fade-up">
+          <img class="rounded-2xl object-cover w-full h-60 md:h-80" src="Assets/Image/FB_IMG_17558365536528269.jpg" alt="galeri1" />
+          <img class="rounded-2xl object-cover w-full h-60 md:h-80" src="Assets/Image/IMG_20230514_111345_757.webp" alt="galeri2" />
+          <img class="rounded-2xl object-cover w-full h-60 md:h-80" src="Assets/Image/IMG_20231008_130141_549.webp" alt="galeri3" />
+          <img class="rounded-2xl object-cover w-full h-60 md:h-80" src="Assets/Image/IMG_20240107_112745_065.webp" alt="galeri4" />
+          <img class="rounded-2xl object-cover w-full h-60 md:h-80" src="Assets/Image/IMG_20241130_201730_558.webp" alt="galeri5" />
+          <img class="rounded-2xl object-cover w-full h-60 md:h-80" src="Assets/Image/IMG_20250822_112222.jpg" alt="galeri6" />
+        </div>
+      </div>
+    </section>
+
+    <section id="gift" class="section bg-[var(--brand-2)]">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <div class="text-center fade-up">
+          <h2 class="text-3xl font-semibold">Amplop Digital</h2>
+          <p class="mt-2 text-black-600">Dukungan dan doa Anda adalah hadiah terbaik bagi kami. Namun, jika ingin mengirimkan kado, bisa melalui:</p>
+        </div>
+        <div class="fade-up mt-6 grid md:grid-cols-2 gap-6">
+          <div class="rounded-3xl bg-white border p-5">
+            <p class="font-semibold">Alamat Pengiriman kado</p>
+            <div class="flex items-center gap-2 mt-1">
+              <code id="AlamatPengiriman" class="rounded-xl bg-gray-100 px-3 py-1">Kel. Gegunung Blok Tajug Gede RT.03 RW.02 Kec. Sumber Kab. Cirebon</code>
+              <button class="px-3 py-1 rounded-lg border" onclick="copyById('AlamatPengiriman')">Salin</button>
+            </div>
+            <p class="mt-2 text-sm text-black-600">a.n. Nurkholisa</p>
+          </div>
+          <div class="rounded-3xl bg-white border p-5">
+            <p class="font-semibold">QRIS</p>
+            <img src="Assets/Image/QRIS.jpg" alt="QRIS" class="mt-2 rounded-xl w-full object-contain" />
+            <p class="mt-2 text-xs text-black-500"></p>
+            <p class="mt-2 text-sm text-black-600">a.n. Chulyatunni'mah</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bukutamu" class="section">
+      <div class="container mx-auto px-6 max-w-3xl">
+        <div class="text-center fade-up">
+          <h2 class="text-3xl font-semibold">Ucapan & Doa</h2>
+          <p class="mt-2 text-black-600">Tinggalkan pesan untuk kami.</p>
+        </div>
+        <div class="fade-up mt-6 grid gap-3">
+          <textarea id="wishText" rows="3" class="px-4 py-3 rounded-2xl border" placeholder="Tulis ucapanmu di sini..."></textarea>
+          <div class="flex flex-wrap gap-3">
+            <input id="wishName" class="px-4 py-3 rounded-2xl border" placeholder="Nama" />
+            <button onclick="saveWish()" class="px-6 py-3 rounded-2xl bg-[var(--brand)] text-white font-semibold">Kirim Ucapan</button>
+          </div>
+          <div id="wishList" class="mt-4 grid gap-3"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section pt-12 pb-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-black-600">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+      <p class="mt-2 font-semibold">Terima kasih 🙏</p>
+      <div class="mt-6 text-xs text-gray-400">© <span id="year"></span> Baragraphy</div>
+    </div>
+  </footer>
+
+  <nav class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40">
+    <div class="glass border border-gray-200/70 rounded-full shadow-lg px-3 py-2 flex items-center gap-1">
+      <a href="#acara" class="px-3 py-1.5 rounded-full hover:bg-white/60">Acara</a>
+      <a href="#lokasi" class="px-3 py-1.5 rounded-full hover:bg-white/60">Lokasi</a>
+      <a href="#rsvp" class="px-3 py-1.5 rounded-full hover:bg-white/60">RSVP</a>
+      <a href="#galeri" class="px-3 py-1.5 rounded-full hover:bg-white/60">Galeri</a>
+      <a href="#gift" class="px-3 py-1.5 rounded-full hover:bg-white/60">Gift</a>
+    </div>
+  </nav>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const params = new URLSearchParams(location.search);
+    const to = params.get('to');
+    if (to) {
+      document.getElementById('guestName').textContent = decodeURIComponent(to);
+    }
+
+    const targetDateLocal = '2025-09-20T08:00:00';
+    const countdownEl = document.getElementById('countdown');
+    const dateText = document.getElementById('dateText');
+    dateText.textContent = 'Sabtu, 20 September 2025';
+
+    function updateCountdown() {
+      const now = new Date();
+      const target = new Date(targetDateLocal);
+      const diff = target - now;
+      if (diff <= 0) {
+        countdownEl.textContent = 'Hari ini!';
+        return;
+      }
+      const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const m = Math.floor((diff / (1000 * 60)) % 60);
+      const s = Math.floor((diff / 1000) % 60);
+      countdownEl.textContent = `${String(d).padStart(2,'0')} Hari : ${String(h).padStart(2,'0')} Jam : ${String(m).padStart(2,'0')} Menit : ${String(s).padStart(2,'0')} Detik`;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    function addToCalendar(title, startUTC, endUTC, locationText) {
+      const ics = `BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//Undangan Online//ID\nBEGIN:VEVENT\nUID:${Date.now()}@undangan\nDTSTAMP:${new Date().toISOString().replace(/[-:]/g,'').split('.')[0]}Z\nDTSTART:${startUTC}\nDTEND:${endUTC}\nSUMMARY:${title}\nLOCATION:${locationText}\nEND:VEVENT\nEND:VCALENDAR`;
+      const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url; a.download = `${title.replace(/\s+/g,'_')}.ics`;
+      document.body.appendChild(a); a.click(); document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+    window.addToCalendar = addToCalendar;
+
+    async function copyText(text) { try { await navigator.clipboard.writeText(text); alert('Tersalin ✔'); } catch { alert('Gagal menyalin'); } }
+    function copyById(id) { copyText(document.getElementById(id).textContent.trim()); }
+    window.copyText = copyText; window.copyById = copyById;
+
+    document.getElementById('shareBtn').addEventListener('click', async () => {
+      const shareData = { title: document.title, text: 'Undangan pernikahan – mohon doa & kehadiran', url: location.href };
+      try { if (navigator.share) await navigator.share(shareData); else { await navigator.clipboard.writeText(location.href); alert('Link disalin ✔'); } } catch {}
+    });
+
+    const wishKey = 'inv_wishes_v1';
+    const wishList = document.getElementById('wishList');
+    function renderWishes() {
+      const arr = JSON.parse(localStorage.getItem(wishKey) || '[]');
+      wishList.innerHTML = '';
+      arr.forEach(w => {
+        const item = document.createElement('div');
+        item.className = 'rounded-2xl border p-4';
+        item.innerHTML = `<div class="font-semibold">${w.name || 'Tamu'}</div><div class="text-black-700 mt-1">${w.text}</div><div class="text-xs text-black-400 mt-2">${new Date(w.time).toLocaleString()}</div>`;
+        wishList.appendChild(item);
+      });
+    }
+    function saveWish() {
+      const text = document.getElementById('wishText').value.trim();
+      const name = document.getElementById('wishName').value.trim();
+      if (!text) return alert('Isi ucapan terlebih dahulu.');
+      const arr = JSON.parse(localStorage.getItem(wishKey) || '[]');
+      arr.unshift({ text, name, time: Date.now() });
+      localStorage.setItem(wishKey, JSON.stringify(arr));
+      document.getElementById('wishText').value = '';
+      renderWishes();
+    }
+    window.saveWish = saveWish;
+    renderWishes();
+  </script>
+</body>
+</html>
