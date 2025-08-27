@@ -229,30 +229,32 @@
             </div>
             <p class="mt-2 text-sm text-black-600">a.n. Nurkholisa</p>
           </div>
-          <div class="rounded-3xl bg-white border p-5">
-            <p class="font-semibold">QRIS</p>
-            <img src="Assets/Image/QRIS.jpg" alt="QRIS" class="mt-2 rounded-xl w-full object-contain" />
-            <p class="mt-2 text-xs text-black-500"></p>
-            <p class="mt-2 text-sm text-black-600">a.n. Chulyatunni'mah</p>
-          </div>
-        </div>
       </div>
     </section>
+<section id="buku-tamu" class="p-6 bg-gray-100 rounded-2xl shadow-md">
+  <h2 class="text-2xl font-bold mb-4 text-center">Buku Tamu</h2>
+  <p class="text-center mb-6">Tulis ucapan & doa terbaik untuk kami</p>
 
-    <section id="bukutamu" class="section">
-      <div class="container mx-auto px-6 max-w-3xl">
-        <div class="text-center fade-up">
-          <h2 class="text-3xl font-semibold">Ucapan & Doa</h2>
-          <p class="mt-2 text-black-600">Tinggalkan pesan untuk kami.</p>
-        </div>
-        <div class="fade-up mt-6 grid gap-3">
-          <textarea id="wishText" rows="3" class="px-4 py-3 rounded-2xl border" placeholder="Tulis ucapanmu di sini..."></textarea>
-          <div class="flex flex-wrap gap-3">
-            <input id="wishName" class="px-4 py-3 rounded-2xl border" placeholder="Nama" />
-            <button onclick="saveWish()" class="px-6 py-3 rounded-2xl bg-[var(--brand)] text-white font-semibold">Kirim Ucapan</button>
-          </div>
-          <div id="wishList" class="mt-4 grid gap-3"></div>
-        </div>
+  <form action="https://formspree.io/f/xeoloqkd" method="POST" class="space-y-4">
+    <div>
+      <label for="nama" class="block text-sm font-medium">Nama</label>
+      <input type="text" id="nama" name="nama" required
+        class="w-full border rounded-lg p-2 focus:ring focus:ring-blue-300">
+    </div>
+
+    <div>
+      <label for="ucapan" class="block text-sm font-medium">Ucapan & Doa</label>
+      <textarea id="ucapan" name="ucapan" rows="4" required
+        class="w-full border rounded-lg p-2 focus:ring focus:ring-blue-300"></textarea>
+    </div>
+
+    <button type="submit"
+      class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700">
+      Kirim Ucapan
+    </button>
+  </form>
+</section>
+    
       </div>
     </section>
   </main>
@@ -358,4 +360,5 @@
   </script>
 </body>
 </html>
+
 
